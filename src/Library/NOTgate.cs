@@ -17,7 +17,7 @@ namespace CompuertasLogicas.Garage
         {
             if(inputs.Count != 1)
             {
-                Console.WriteLine("La compuerta Not debe tener solamente una entrada")
+                Console.WriteLine("La compuerta Not debe tener solamente una entrada");
                 return false;
             }
             return !inputs[0];
