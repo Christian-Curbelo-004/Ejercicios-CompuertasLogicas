@@ -1,11 +1,32 @@
 namespace CompuertasLogicas.Garage
 {
-    public class NOTgate: IGate
+    public class NotGate : IGate
     {
-        public override bool Valid (bool a, bool b, bool c)
+        private List<bool> inputs = new List<bool>();
+
+        public NotGate(bool input1)
         {
-            return !a; // devuelve valor negado
+            this.inputs.Add(input1);
+        }
+        public void AddInput(bool input)
+        {
+            inputs.Add(input);
+        }
+
+        private bool Evaluate()
+        {
+            if(inputs.Count != 1)
+            {
+                Console.WriteLine("La compuerta Not debe tener solamente una entrada")
+                return false;
+            }
+            return !inputs[0];
+        }
+        public bool Output()
+        {
+            return Evaluate();
         }
     }
+
 }
 
