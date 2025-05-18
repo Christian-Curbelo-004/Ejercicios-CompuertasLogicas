@@ -1,3 +1,5 @@
+namespace CompuertasLogicas.Library;
+
 using System;
 using System.Collections.Generic;
 
@@ -16,7 +18,7 @@ public class AndGate : IGate
         inputs.Add(input);
     }
 
-    private bool Evaluate()
+    public bool Evaluate()
     {
         bool result = true;
         foreach (bool input in inputs)
