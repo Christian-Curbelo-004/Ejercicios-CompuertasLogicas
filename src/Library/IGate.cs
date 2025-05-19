@@ -1,7 +1,10 @@
-namespace CompuertasLogicas.Garage; // Aplica las compeurtas logicas
+namespace CompuertasLogicas.Library;
+
+using System;
+using System.Collections.Generic;
 
 public interface IGate
 {
    public bool Output();
-   private bool Evaluate();
+   public bool Evaluate();
 }

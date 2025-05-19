@@ -1,10 +1,10 @@
-namespace CompuertasLogicas.Garage
+namespace CompuertasLogicas.Library
 {
     public class OrGate : IGate
     {
         private List<bool> inputs = new List<bool>();
 
-        public ORgate(bool input1, bool input2)
+        public OrGate(bool input1, bool input2)
         {
             this.inputs.Add(input1);
             this.inputs.Add(input2);
@@ -15,7 +15,7 @@ namespace CompuertasLogicas.Garage
             inputs.Add(input);
         }
 
-        private bool Evaluate()
+        public bool Evaluate()
         {
             bool result = false;
             foreach (bool input in inputs)

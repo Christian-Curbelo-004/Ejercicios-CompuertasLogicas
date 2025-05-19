@@ -38,3 +38,7 @@ public class GarageGate
 
         return result;
     }
+<<<<<<< HEAD
+=======
+}
+>>>>>>> 94f09a1e4adc3c2f241833dfe8cd6ec7565092c9

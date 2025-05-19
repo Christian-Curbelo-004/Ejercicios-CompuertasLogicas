@@ -1,5 +1,4 @@
-
-using System;
+﻿using System;
 using CompuertasLogicas.Library;
 
 namespace CompuertasLogicas.ConsoleApp
@@ -40,4 +39,3 @@ namespace CompuertasLogicas.ConsoleApp
         }
     }
 }
-
