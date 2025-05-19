@@ -9,7 +9,7 @@ public class GarageGate
         var notB = new NotGate(b);
         //var and1 = new AndGate(c,nb);
         //var and2 = new AndGate();
-        var and3 = new AndGate(c,b);
+        var and3 = new AndGate(c, b);
         //var and4 = new AndGate();
         //var or = new OrGate(term1,term2);
 
@@ -18,7 +18,7 @@ public class GarageGate
         bool nb = notB.Evaluate();
 
         // Calcular c AND NOT b
-        var and1 = new AndGate(c,nb);
+        var and1 = new AndGate(c, nb);
         bool cAndNb = and1.Evaluate();
 
         // Calcular (c AND NOT b) AND NOT a
@@ -33,12 +33,9 @@ public class GarageGate
         bool term2 = and4.Evaluate();
 
         // Calcular el resultado final: term1 OR term2
-        var or = new OrGate(term1,term2);
+        var or = new OrGate(term1, term2);
         bool result = or.Evaluate();
 
         return result;
     }
-<<<<<<< HEAD
-=======
 }
->>>>>>> 94f09a1e4adc3c2f241833dfe8cd6ec7565092c9
