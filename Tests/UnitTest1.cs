@@ -4,8 +4,8 @@
 
     public class Tests
     {
-        // Función lógica a evaluar
-        public bool MiFuncion(bool a, bool b, bool c)
+        
+        public bool Evaluate(bool a, bool b, bool c)
         {
             return c && ((a && b) || (!a && !b));
         }
@@ -27,7 +27,7 @@
 
             foreach (var (a, b, c, expected) in testCases)
             {
-                var result = MiFuncion(a, b, c);
+                var result = Evaluate(a, b, c);
                 Assert.That(result, Is.EqualTo(expected),
                     $"Fallo con entrada: a={a}, b={b}, c={c} — esperado: {expected}, obtenido: {result}");
             }
